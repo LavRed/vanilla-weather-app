@@ -11,6 +11,10 @@ h1 {
   color: grey;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -32,4 +36,13 @@ li:first-letter {
   border-color: orange;
   border-style: solid;
   border-radius: 5px;
+}
+
+.weather-app .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.weather-app .active:hover {
+  text-decoration: none;
 }
