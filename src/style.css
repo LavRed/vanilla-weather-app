@@ -30,6 +30,11 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+.city-header {
+  margin: 20px auto;
+  text-align: center;
+}
+
 .weather-app {
   margin: 20px auto;
   padding: 20px;
@@ -63,4 +68,8 @@ li:first-letter {
 
 .weather-forecast-temp-min {
   opacity: 0.5;
+}
+
+#weather-additions {
+  text-align: right;
 }
