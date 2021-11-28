@@ -11,7 +11,6 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
     <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla Weather App</title>
   </head>
@@ -41,22 +40,28 @@
         <div class="city-header">
           <h1 id="city"></h1>
           <img src="" id="icon" alt="" /></br>
+          <div id="description"></div>
           <strong id="temperature"> </strong>
           <sup>
             °F
           </sup>
         </div>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-4">
             <ul>
-              <li>Last update: <span id="time"></span></li>
-              <li id="description"></li>
+              <li>Last updated: <span id="time"></span></li>
             </ul>
           </div>
-          <div class="col-md-6" id="weather-additions">
+          <div class="col-md-4" id="weather-additions">
             <ul>
               <li>Humidity: <span id="humidity"></span>%</li>
-              <li>Wind: <span id="wind"></span>km/h</li>
+              <li>Wind: <span id="wind"></span>m/h</li>
+            </ul>
+          </div>
+          <div class="col-md-4" id="sun-position">
+            <ul>
+              <li>Sunrise: <span id="sunrise"></span></li>
+              <li>Sunset: <span id="sunset"></span></li>
             </ul>
           </div>
         </div>
@@ -76,16 +81,17 @@
             </div>
           </div>
         </div>
-      </div>
-      <small>
+    <script src="src/app.js">
+    </script>
+    </div>
+    </div>
+  </body>
+  <small>
         <a
           href="https://github.com/LavRed/vanilla-weather-app.git"
           target="_blank"
           >Open Source Code</a
         >
         by LaVisha Redmon
-      </small>
-    </div>
-    <script src="src/app.js"></script>
-  </body>
+  </small>
 </html>
